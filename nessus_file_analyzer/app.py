@@ -2692,7 +2692,7 @@ class ParsingThread(QThread):
                 # 'Uname',
                 'Description',
                 'Check status',
-                'Reference',
+                'Solution',
                 'Error'
             ]
         else:
@@ -2724,7 +2724,7 @@ class ParsingThread(QThread):
                 'Uname',
                 'Description',
                 'Check status',
-                'Reference',
+                'Solution',
                 'Error'
             ]
         number_of_columns = len(headers)
@@ -2849,7 +2849,7 @@ class ParsingThread(QThread):
                                 compliance_check_result = \
                                     nfr.plugin.compliance_check_item_value(report_item, 'cm:compliance-result')
                                 compliance_check_reference = \
-                                    nfr.plugin.compliance_check_item_value(report_item, 'cm:compliance-reference')
+                                    nfr.plugin.compliance_check_item_value(report_item, 'cm:compliance-solution')
                                 compliance_check_error = \
                                     nfr.plugin.compliance_check_item_value(report_item, 'cm:compliance-error')
 
